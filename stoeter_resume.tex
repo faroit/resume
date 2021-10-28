@@ -1,0 +1,310 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj, Fabian-Robert Stöter
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+% fix for pandoc 1.14
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% \usepackage[sfdefault]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+% \usepackage[T1]{fontenc}
+% \renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.faroit.com}{\Large Dr.-Ing. Fabian-Robert St\"oter}} & Email : \href{mailto:mail@faroit.com}{mail@faroit.com}\\
+  \href{https://www.faroit.com}{https://www.faroit.com} & Mobile : +33637184935 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fraunhofer IIS and University of Erlangen-Nürnberg}{Germany}
+      {PhD/ Dr.-Ing. (Summa cum laude)}{2019}
+      \resumeItemListStart
+        \resumeItem{PhD Thesis}
+          {``Separation and Count Estimation for Audio Sources Overlapping in Time and Frequency'', International Audio Laboratories Erlangen, Examiners: Prof. Dr.-Ing. Bernd Edler (AudioLabs), Prof. Gaël Richard PhD. (ParisTech)}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Hannover}{Germany}
+      {Diplom Ingenieur/Master of Science in Electrical Engineering.}{2012}
+    \resumeItemListStart
+      \resumeItem{Master thesis}
+        {``Low Delay Error Concealment for Audio signals'', Institute for Information Processing, Examiner: Prof. Dr.-Ing Jörn Ostermann.}
+      \resumeItem{Study Project/Bachelor Thesis}
+        {``Image Segmentation Using Graph-Cuts'', Institute for Information Processing in Hannover, Examiner: Prof. Dr. Bodo Rosenhahn.\\
+        }
+    \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {University of Hannover}{Germany}
+    %   {Industrial Engineering.}{2003 -- 2005}
+    % \resumeSubheading
+    %   {Friedrich-Ebert Gymnasium}{Hamburg, Germany}
+    %   {Abitur}{2002}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Audioshake.ai}{Montpellier, France}
+    {Head of Research}{Present}
+    \resumeItemListStart
+      \resumeItem{Music Separation}
+        {Leading the research team of AI based state-of-the-art music separation tech.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Sony Europe, Sony Japan}{}
+    {Visiting Researcher}{Summer 2021}
+    \resumeItemListStart
+      \resumeItem{Self-Supervised learning}
+        {Speech and music AI}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Inria and LIRMM}{Montpellier, France}
+      {Research Engineer}{2017 - 2021}
+      \resumeItemListStart
+        \resumeItem{Kamoulox Project (French National Funding)}
+          {Research of AI based audio restoration techniques on big data.
+           Development of open-source implementation of source separation and enhancement (Open-Unmix).
+          }
+        \resumeItem{COS4CLOUD/Pl@ntnet (EU Horizon 2020)}
+          {Pl@ntnet: computer-vision AI research on biodiversity citizen science data.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {International Audio Laboratories Erlangen}{Erlangen, Germany}
+      {Research and Teaching Assistant}{2012 - 2017}
+      \resumeItemListStart
+        \resumeItem{Research Interests}
+          {audio signal processing, machine learning and deep learning, signal representations, auditory filter banks and modulations, perceptual evaluation for music and speech, speaker count estimation.}
+        \resumeItem{Teaching}
+          {\\
+          \emph{Seminars}: Reproducible Audio Research Seminar. \\
+          \emph{Courses}: Statistical Methods for Audio Experiments in R (2013-2016) \\
+          \emph{Supervision:} 3 master students, 2 bachelor students, 2 interns, and many student assistants.
+          }
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Dolby Inc.}{Nuremberg, Germany}
+      {Engineering Intern: Testing and Productization, Professional Licensing}{2011}
+
+    \resumeSubheading
+      {FAROIT.COM}{Germany}
+      {Entrepreneurship: Web Services for various PR-companies, private banks and marketing companies.}{2001 - 2014}
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Scientific Services}
+  \resumeSubHeadingListStart
+    \resumeSubItem{SiSEC}
+      {SiSEC (Separation Evaluation Challenge) MUS task co-chair}
+    \resumeSubItem{BirdCLEF}
+      {Task organizer for the bird classification task.}
+    \resumeSubItem{Open Source Contributions (Github)}
+      {awesome-python-scientific-audio, musdb, museval, librosa, mireval}
+    \resumeSubItem{Reviewing}
+     {IEEE Transactions on Audio, Speech and Language Processing,
+     EURASIP, ICASSP, ISMIR, DAFx, Web Audio Conference}
+  \resumeSubHeadingListEnd
+
+\section{Invited Talks/Tutorials/Summer
+Schools}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Course (3h)}
+    {»Introduction to Deep Learning«, Montpellier, 2019 and 2020, Polytech University)}
+    \resumeSubItem{Tutorial (3h)}
+    {»Music Separation with DNNs: Making It Work«, ISMIR, 2018 (Paris, September 4th, 2018)}
+    \resumeSubItem{Invited Talk (1h)}
+    {»Deep Learning for Music Unmixing«, Deep Learning: from
+      theory to applications, Technicolor (Rennes, September 23th, 2018)}
+    \resumeSubItem{Tutorial (3h)}
+    {»Music Separation with DNNs: Making It Work«, ISMIR, 2018 (Paris, September 4th, 2018)}
+    \resumeSubItem{Presentation}
+    {Summer School for Pitch, Music and Associated Pathologies (Lyon, 2014)}
+  \resumeSubHeadingListEnd
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Skills and Tools}
+ \resumeSubHeadingListStart
+   \resumeSubItem{Programming Languages}
+     {Python, Javascript, Matlab, R, C, Java, Julia, SQL}
+   \resumeSubItem{DevOps/Deployment Tools}
+     {Docker, Kubernetes, Git, Github/Gitlab, AWS, HPC, pytest}
+   \resumeSubItem{Machine Learning Frameworks}
+     {PyTorch, Tensorflow, Keras, NNabla, Scikit-Learn, statsmodels}
+     \resumeSubHeadingListEnd
+
+ % --------PROGRAMMING SKILLS------------
+\section{Languages}
+\resumeSubHeadingListStart
+  \item{
+    \textbf{German}{: native}
+    \textbf{English}{: fluent (C1)}
+    \textbf{French}{: basic (A2)}
+  }
+\resumeSubHeadingListEnd
+
+\section{Selected Publications}
+
+\begin{itemize}
+\tightlist
+\item 
+  Y. Mitsufuji, G. Fabro, S. Uhlich, F.-R. Stöter. open.unmix.app - towards music separation on the edge, arxiv preprint.
+\item 
+  M. Pariente, S. Cornell, J. Cosentino, S. Sivasankaran, E. Tzinis, J. Heitkaemper, M. Olvera, F.-R. Stöter, M. Hu, J. M. Martín-Doñas, D. Ditter, A. Frank, A. Deleforge, and E. Vincent. “Asteroid: the PyTorch-based audio source separation toolkit for researchers”,  Proc. Interspeech. 2020.
+\item
+  F.-R. Stöter, S. Uhlich, A. Liutkus, and Y. Mitsufuji.
+  \emph{Open-Unmix - A Reference Implementation for Music Source Separation},
+  Journal of Open Source Software, 2019
+\item
+  A. Liutkus, U. Simsekli, S. Majewski, A. Durmus, and F.-R. Stöter.
+  \emph{Sliced-Wasserstein Flows: Nonparametric Generative Modeling via
+  Optimal Transport and Diffusions.}, ICML 2019.
+\item
+  E. Cano, D. FitzGerald, A. Liutkus, MD. Plumbley, and F.-R. Stöter.
+  \emph{Musical Source Separation: An Introduction} IEEE Signal
+  Processing Magazine, 36, 2019.
+\item
+  F.-R. Stöter, S. Chakrabarty, B. Edler, and E. A. P. Habets.
+  \emph{CountNet: Estimating the Number of Concurrent Speakers Using
+  Supervised Learning.} IEEE/ACM Transactions on Audio, Speech, and
+  Language Processing, Nov.~2018.
+\item
+  F.-R. Stöter, S Chakrabarty, B. Edler, and E.A.P. Habets.
+  \emph{Classification vs.~Regression in Supervised Learning for Single
+  Channel Speaker Count Estimation.} International Conference on
+  Acoustics, Speech and Signal Processing (ICASSP). Calgary, Canada,
+  2018.
+\item
+  Z. Rafii, A. Liutkus, F. R. Stöter, S. I. Mimilakis, D.
+  FitzGerald, and B. Pardo. \emph{An Overview of Lead and Accompaniment
+  Separation in Music.} In: IEEE/ACM Transactions on Audio, Speech, and
+  Language Processing, Aug.~2018.
+\item
+  F.R. Stöter, A. Liutkus, and N. Ito, \emph{The 2018 Signal
+  Separation Evaluation Campaign.} International Conference on Latent
+  Variable Analysis and Signal Separation, 2018.
+\item
+  M. Schoeffler, S. Bartoschek, F.R. Stöter, M. Roess, S.
+  Westphal, B. Edler and J. Herre, \emph{webMUSHRA---A Comprehensive
+  Framework for Web-based Listening Tests} Journal of Open Research
+  Software, 2018.
+\item
+  A. Liutkus, F.-R. Stöter, Z. Rafii, D. Kitamura, B. Rivet, N.
+  Ito, N. Ono, and J. Fontecave \emph{The 2016 Signal Separation Evaluation
+  Campaign} Proc. of Latent Variable Analysis and Signal Separation, Grenoble, France, 2017.
+\item
+  F.-R. Stöter, A. Liutkus, R. Badeau, B. Edler, and P. Magron
+  \emph{Common Fate Model for Unison Source Separation} International
+  Conference on Acoustics, Speech and Signal Processing (ICASSP), 
+  Shanghai, China, 2016.
+\item
+  M. Schoeffler, F.-R. Stöter, B. Edler, and J. Herre \emph{Towards
+  the next generation of web-based experiments: a case study assessing
+  basic audio quality following the ITU-R BS1534
+  (MUSHRA)} 1st Web Audio Conference, Paris, France, 2016.
+\item
+  F.-R. Stöter, M. Müller, and B. Edler
+  \emph{Multi-Sensor Cello Recordings for Instantaneous Frequency
+  Estimation.} Proceedings of the ACM Multimedia, Brisbane, Australia, 2015.
+\item
+  F.-R. Stöter, N. Werner, S. Bayer, and B. Edler \emph{Refining
+  Fundamental Frequency Estimates using Time Warping.} Proceedings of
+  EUSIPCO, Nice, France, 2015.
+\item
+  F.-R. Stöter, S. Bayer, and B. Edler \emph{Unison Source
+  Separation, International Conference on Digital Audio Effects.}
+  Proceedings of the International Conference on Digital Audio Effects
+  (DAFx), Erlangen, Germany, 2014.
+\item
+  F.-R. Stöter, M. Schoeffler, B. Edler and J. Herre \emph{Human
+  ability of counting the number of instruments in polyphonic music.}
+  Proceedings of Meetings on Acoustics, Curitiba, Brazil, 2013
+\item
+  M. Schoeffler, F.-R. Stöter, H. Bayerlein, B. Edler and J. Herre
+  \emph{An experiment about estimating the number of instruments in
+  polyphonic music: a comparison between internet and laboratory
+  results.} Proceedings of the International Society for Music
+  Information Retrieval Conference (ISMIR), 2013.
+\end{itemize}
+
+\end{document}
